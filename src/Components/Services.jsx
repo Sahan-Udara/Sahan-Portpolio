@@ -1,6 +1,6 @@
 import React from 'react';
 import Background from '../assets/Background/SubBack.jpg';
-import MainBackground from '../assets/Back/MainBackground.jpg';
+import MainBackground from '../assets/Back/BackExpand.jpg';
 import Graphic from '../assets/Services/Graphic.png';
 import UIUX from '../assets/Services/UIUX.png';
 import Web from '../assets/Services/Web.png';

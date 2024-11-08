@@ -1,5 +1,5 @@
 import React from 'react';
-import MainBackground from '../assets/Back/MainBackground.jpg';
+import MainBackground from '../assets/Back/BackExpand.jpg';
 
 const Education = () => {
   const cards = [

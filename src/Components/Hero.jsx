@@ -1,6 +1,6 @@
 import React from 'react'
 import Background from '../assets/Background/SubBack.jpg';
-import MainBackground from '../assets/Back/MainBackground.jpg';
+import MainBackground from '../assets/Back/BackExpand.jpg';
 import Ashan from '../assets/Hero/Ashan.png';
 
 

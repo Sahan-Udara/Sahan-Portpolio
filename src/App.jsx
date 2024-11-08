@@ -5,6 +5,7 @@ import About from './Components/About';
 import Services from './Components/Services';
 import Education from './Components/Education';
 import { Ipad } from './Components/ipad';
+import Contact from './Components/Contact';
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
         <Services/>
         <Education/>
         <Ipad/>
-        <Education/>
+        <Contact/>
 
         
 
