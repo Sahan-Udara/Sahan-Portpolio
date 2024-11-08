@@ -4,7 +4,6 @@ import MainBackground from '../assets/Back/BackExpand.jpg';
 import IpadIMG from '../assets/Project/Sample.jpg';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
-// Import images for each category
 import WebDevImg1 from '../assets/Project/Web/Cinama.jpg';
 import WebDevImg2 from '../assets/Project/Web/Gamer.jpg';
 import WebDevImg3 from '../assets/Project/Web/Photographer.jpg';
@@ -63,7 +62,6 @@ export function Ipad() {
       </TabScroll>
 
       <div>
-        {/* Navigation text section with z-index for mobile touch */}
         <h1 className="text-2xl font-bold mt-[-220px] md:pt-[100px] lg:pt-[250px] mb-10 text-[#ffffff] uppercase text-center cursor-pointer z-50 relative">
       <span
         className={`block sm:inline hover:text-[#8d4aea] text-xl md:text-2xl ${selectedCategory === "Web Development" ? "text-[#8d4aea]" : ""}`}
@@ -90,7 +88,6 @@ export function Ipad() {
       </div>
     </h1>
 
-        {/* Project Images Section */}
         <div className="grid items-center justify-center grid-cols-2 gap-4 md:grid-cols-5 md:px-[100px]">
           {projectData[selectedCategory].slice(startIndex, startIndex + (window.innerWidth < 768 ? 2 : 5)).map((image, index) => (
             <div key={index}>
@@ -100,7 +97,6 @@ export function Ipad() {
         </div>
 
         <div className="flex flex-row items-end justify-end gap-4 mt-8 md:px-[100px]">
-          {/* Scroller Buttons */}
           <button onClick={handleScrollLeft} className="w-10 h-10 rounded-full border bg-[#000000] border-[#8d4aea] text-[#8d4aea] flex justify-center items-center">
             <FaChevronLeft />
           </button>

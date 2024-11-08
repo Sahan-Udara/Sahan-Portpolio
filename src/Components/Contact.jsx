@@ -48,9 +48,9 @@ const Contact = () => {
   return (
     <div className='flex flex-col p-4 bg-center bg-no-repeat bg-cover md:px-24 md:pt-12 md:pb-24' style={{ backgroundImage: `url(${MainBackground})` }}>
       {/* section 01 */}
-      <div className='flex flex-col p-10 md:flex-row justify-evenly'>
+      <div className='flex flex-col py-10 md:flex-row justify-evenly'>
         <h1 className='font-sans text-4xl md:text-4xl font-bold text-[#ffffff] uppercase mr-8 mb-4'>
-          Let’s Get Connect With Us
+          Let’s Get Connect With me
         </h1>
         <p className='font-sans text-xl md:text-l text-[#ffffff]'>
           Hello there! My name is Ashan Kavindu. I am a web designer & developer, and I'm very passionate about my work.
@@ -58,26 +58,26 @@ const Contact = () => {
       </div>
 
       <div className='flex flex-col md:flex-row'>
-        <div className='flex flex-col flex-grow w-full md:max-w-[500px] gap-8 px-10'>
-          <div className='flex items-center w-full h-auto p-8 bg-black rounded-3xl'>
+        <div className='flex flex-col flex-grow w-full md:max-w-[500px] gap-8 '>
+          <div className='flex items-center w-full h-auto p-8 bg-black cursor-pointer rounded-3xl'>
             <img src={Telephone} alt="Phone Icon" className="w-[60px] h-[60px] mr-6" />
-            <h1 className='font-sans md:text-[28px] text-xl font-bold text-[#ffffff] uppercase'>(704) 555-0127</h1>
+            <h1 className='font-sans md:text-[28px] text-xl font-bold text-[#ffffff] hover:text-[#a973f5] uppercase'>+94 775 655 031</h1>
           </div>
 
-          <div className='flex items-center w-full h-auto p-8 bg-black rounded-3xl'>
+          <div className='flex items-center w-full h-auto p-8 bg-black cursor-pointer rounded-3xl'>
             <img src={Email} alt="Email Icon" className="w-[60px] h-[60px] mr-6" />
-            <h1 className='font-sans md:text-[28px] text-xl font-bold text-[#ffffff] uppercase'>hello@gmail.com</h1>
+            <h1 className='font-sans md:text-[28px] text-xl font-bold text-[#ffffff] hover:text-[#a973f5] '>ashankaviuh@gmail.com</h1>
           </div>
 
-          <div className='flex items-center w-full h-auto p-8 bg-black rounded-3xl'>
+          <div className='flex items-center w-full h-auto p-8 bg-black cursor-pointer rounded-3xl'>
             <img src={Location} alt="Location Icon" className="w-[60px] h-[60px] mr-6" />
-            <h1 className='font-sans md:text-[28px] text-xl font-bold text-[#ffffff] uppercase'>No 500 Colombo Road, Dehiwala</h1>
+            <h1 className='font-sans md:text-[28px] text-xl font-bold text-[#ffffff] hover:text-[#a973f5] '>No 300, Citrus Juction, Narawala, Poddala</h1>
           </div>
-          <h1 className='font-sans text-3xl font-bold text-[#8d4aea] uppercase'>Connect Me</h1>
+          <h1 className='font-sans text-3xl font-bold text-[#8d4aea]  uppercase'>Connect Me</h1>
           <SocialMedia />
         </div>
 
-        <div className='flex flex-col md:flex-grow h-auto justify-center items-start w-full max-w-[1900px] px-10 mt-10 md:mt-0 mb-10'>
+        <div className='flex flex-col md:flex-grow h-auto justify-center items-start w-full max-w-[1900px] md:ml-10 mt-10 md:mt-0 mb-10'>
           <form className="w-full space-y-4" onSubmit={handleSubmit}>
             <div>
               <label className="block text-xl font-medium text-white">Name<span className='text-red-500'>*</span></label>
