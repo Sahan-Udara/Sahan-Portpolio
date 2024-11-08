@@ -10,7 +10,7 @@ import WebDevImg2 from '../assets/Project/Web/Gamer.jpg';
 import WebDevImg3 from '../assets/Project/Web/Photographer.jpg';
 import WebDevImg4 from '../assets/Project/Web/RealState.jpg';
 import WebDevImg5 from '../assets/Project/Web/Photographer2.jpg';
-import UiUxImg1 from '../assets/Project//UiUx/Fashion.jpg';
+import UiUxImg1 from '../assets/Project/UiUx/Fashion.jpg';
 import UiUxImg2 from '../assets/Project/UiUx/FashionApp.jpg';
 import UiUxImg3 from '../assets/Project/UiUx/MobileStore.jpg';
 import UiUxImg4 from '../assets/Project/UiUx/Music.jpg';
@@ -64,38 +64,31 @@ export function Ipad() {
 
       <div>
         {/* Navigation text section with z-index for mobile touch */}
-        <h1 className="text-2xl font-bold mt-[-220px] md:pt-[100px] lg:pt-[250px] mb-10 text-[#ffffff] uppercase text-center cursor-pointer z-10">
-          <span
-            className={`hover:text-[#8d4aea] text-xl md:text-2xl ${selectedCategory === "Web Development" ? "text-[#8d4aea]" : ""}`}
-            onClick={() => {
-              console.log("Web Development clicked");
-              setSelectedCategory("Web Development");
-            }}
-            onTouchStart={() => setSelectedCategory("Web Development")}
-          >
-            Web Development
-          </span>
-          <span
-            className={` mx-20 hover:text-[#8d4aea] text-xl md:text-2xl ${selectedCategory === "UI/UX Design" ? "text-[#8d4aea]" : ""}`}
-            onClick={() => {
-              console.log("UI/UX Design clicked");
-              setSelectedCategory("UI/UX Design");
-            }}
-            onTouchStart={() => setSelectedCategory("UI/UX Design")}
-          >
-            UI/UX Design
-          </span>
-          <span
-            className={`hover:text-[#8d4aea]  text-xl md:text-2xl ${selectedCategory === "Graphic Design" ? "text-[#8d4aea]" : ""}`}
-            onClick={() => {
-              console.log("Graphic Design clicked");
-              setSelectedCategory("Graphic Design");
-            }}
-            onTouchStart={() => setSelectedCategory("Graphic Design")}
-          >
-            Graphic Design
-          </span>
-        </h1>
+        <h1 className="text-2xl font-bold mt-[-220px] md:pt-[100px] lg:pt-[250px] mb-10 text-[#ffffff] uppercase text-center cursor-pointer z-50 relative">
+      <span
+        className={`block sm:inline hover:text-[#8d4aea] text-xl md:text-2xl ${selectedCategory === "Web Development" ? "text-[#8d4aea]" : ""}`}
+        onClick={() => setSelectedCategory("Web Development")}
+        onTouchStart={() => setSelectedCategory("Web Development")}
+      >
+        Web Development
+      </span>
+      <div className="flex justify-center gap-8 mt-2 sm:mt-0 sm:inline">
+        <span
+          className={`hover:text-[#8d4aea] text-xl md:text-2xl lg:mx-10 ${selectedCategory === "UI/UX Design" ? "text-[#8d4aea]" : ""}`}
+          onClick={() => setSelectedCategory("UI/UX Design")}
+          onTouchStart={() => setSelectedCategory("UI/UX Design")}
+        >
+          UI/UX Design
+        </span>
+        <span
+          className={`hover:text-[#8d4aea] text-xl md:text-2xl ${selectedCategory === "Graphic Design" ? "text-[#8d4aea]" : ""}`}
+          onClick={() => setSelectedCategory("Graphic Design")}
+          onTouchStart={() => setSelectedCategory("Graphic Design")}
+        >
+          Graphic Design
+        </span>
+      </div>
+    </h1>
 
         {/* Project Images Section */}
         <div className="grid items-center justify-center grid-cols-2 gap-4 md:grid-cols-5 md:px-[100px]">
