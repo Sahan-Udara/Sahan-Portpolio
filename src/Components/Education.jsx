@@ -52,7 +52,7 @@ const Education = () => {
         {cards.slice(2).map((card, index) => (
           <div className='p-6 text-white bg-[#2d2c2e] hover:bg-[#8d4aea] rounded-3xl' key={index}>
             <p className="mb-6 text-sm">{card.description}</p>
-            <h3 className="text-xl font-bold text-[#ffffff] hover:bg-[#000000]">{card.title}</h3>
+            <h3 className="text-xl font-bold text-[#ffffff]">{card.title}</h3>
           </div>
         ))}
       </div>
