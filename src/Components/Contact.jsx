@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'; 
 import SocialMedia from './SocialMedia';
 import Telephone from '../assets/Contact/Telephone.png';
 import Email from '../assets/Contact/Email.png';
@@ -53,7 +53,7 @@ const Contact = () => {
           Let’s Get Connect With me
         </h1>
         <p className='font-sans text-xl md:text-l text-[#ffffff]'>
-          Hello there! My name is Ashan Kavindu. I am a web designer & developer, and I'm very passionate about my work.and I'm very passionate about my work.and I'm very passionate about my work.
+          Hello there! My name is Ashan Kavindu. I am a web designer & developer, and I'm very passionate about my work.
         </p>
       </div>
 
@@ -69,15 +69,18 @@ const Contact = () => {
             <h1 className='font-sans md:text-[28px] text-xl font-bold text-[#ffffff] hover:text-[#a973f5] '>ashankaviuh@gmail.com</h1>
           </div>
 
-          <div className='flex items-center w-full h-auto p-8 bg-black cursor-pointer rounded-3xl'>
+          <div
+            className='flex items-center w-full h-auto p-8 bg-black cursor-pointer rounded-3xl'
+            onClick={() => window.open('https://maps.app.goo.gl/yQ1H6GpZ9u3vPZop6', '_blank')}
+          >
             <img src={Location} alt="Location Icon" className="w-[60px] h-[60px] mr-6" />
-            <h1 className='font-sans md:text-[28px] text-xl font-bold text-[#ffffff] hover:text-[#a973f5] '>No 300, Citrus Juction, Narawala, Poddala</h1>
+            <h1 className='font-sans md:text-[28px] text-xl font-bold text-[#ffffff] hover:text-[#a973f5] '>No 300, Citrus Junction, Narawala, Poddala</h1>
           </div>
-          <h1 className='font-sans text-3xl font-bold text-[#ffffff]  uppercase'>Connect Me</h1>
+          <h1 className='font-sans text-3xl font-bold text-[#ffffff] hover:text-[#a973f5] uppercase'>Connect Me</h1>
           <SocialMedia />
         </div>
 
-        <div className='flex flex-col md:flex-grow h-auto justify-center items-start w-full max-w-[1900px] md:ml-10 mt-10 md:mt-0 mb-10'>
+        <div className='flex flex-col md:flex-grow h-auto justify-center items-start w-full max-w-[1900px] md:ml-20 mt-10 md:mt-0 mb-10'>
           <form className="w-full space-y-4" onSubmit={handleSubmit}>
             <div>
               <label className="block text-xl font-medium text-white">Name<span className='text-red-500'>*</span></label>
@@ -106,21 +109,21 @@ const Contact = () => {
                 {errors.email && <p className="text-red-500">{errors.email}</p>}
               </div>
               <div className="flex-grow">
-              <label className="block text-xl font-medium text-white">Phone Number<span className='text-red-500'>*</span></label>
-              <input
-                type="text"
-                name="phone"
-                value={formData.phone}
-                onChange={(e) => {
-                  // Only allow numeric input
-                  const numericValue = e.target.value.replace(/\D/, '');
-                  setFormData({ ...formData, phone: numericValue });
-                }}
-                className="mt-2 w-full p-4 border-2 border-[#8d4aea] rounded-2xl text-white text-l bg-[#000000] outline-none hover:ring-1 hover:ring-[#a973f5]"
-                placeholder="Ex. 077 1234 031"
-              />
-              {errors.phone && <p className="text-red-500">{errors.phone}</p>}
-            </div>
+                <label className="block text-xl font-medium text-white">Phone Number<span className='text-red-500'>*</span></label>
+                <input
+                  type="text"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={(e) => {
+                    // Only allow numeric input
+                    const numericValue = e.target.value.replace(/\D/, '');
+                    setFormData({ ...formData, phone: numericValue });
+                  }}
+                  className="mt-2 w-full p-4 border-2 border-[#8d4aea] rounded-2xl text-white text-l bg-[#000000] outline-none hover:ring-1 hover:ring-[#a973f5]"
+                  placeholder="Ex. 077 1234 031"
+                />
+                {errors.phone && <p className="text-red-500">{errors.phone}</p>}
+              </div>
             </div>
 
             <div>
