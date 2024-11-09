@@ -24,7 +24,7 @@ const Navbar = () => {
 
   return (
     <div className='flex items-center justify-between max-w-auto font-bold p-4 md:px-[200px] text-white bg-[#1d1d1d] z-50'>
-      <img className='h-[40px] my-5' src={Logo} alt="Logo" />
+      <img className='md:h-[40px] h-[20px]  ' src={Logo} alt="Logo" />
       <ul className='hidden font-sans text-xl font-normal tracking-wide lg:flex'>
         <li className='p-4 cursor-pointer' style={linkStyle} onClick={() => handleScroll('hero')}>Home</li>
         <li className='p-4 cursor-pointer' style={linkStyle} onClick={() => handleScroll('about')}>About Me</li>
