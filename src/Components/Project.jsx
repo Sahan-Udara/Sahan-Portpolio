@@ -71,16 +71,15 @@ export function Project() {
       <TabScroll
         titleComponent={
           <>
-            <h1 className="text-4xl font-bold text-[#8d4aea]">
+            <h1 className="text-4xl font-bold text-[#8d4aea] cursor-default">
               WORKING PROCESS <br />
-              <span className="font-sans text-5xl font-black text-white md:text-6xl lg:text-8xl">
+              <span className="font-sans text-5xl font-black text-white cursor-default md:text-6xl lg:text-8xl">
                 Latest Project
               </span>
             </h1>
           </>
         }
       >
-        {/* Ipad Area*/}
         <a href={selectedProject.url} target="_blank" rel="noopener noreferrer">
           <img src={selectedProject.image} height={720} width={1400} className="object-cover h-full mx-auto bg-center bg-no-repeat bg-cover rounded-2xl" draggable={false} />
         </a>

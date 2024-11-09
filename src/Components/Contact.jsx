@@ -48,7 +48,7 @@ const Contact = () => {
   return (
     <div className='flex flex-col bg-center bg-no-repeat bg-cover p-4 md:py-[100px] md:px-[200px] md:pb-[50px]' style={{ backgroundImage: `url(${MainBackground})` }}>
       {/* section 01 */}
-      <div className='flex flex-col justify-between py-10 md:flex-row'>
+      <div className='flex flex-col justify-between py-10 cursor-default md:flex-row'>
         <h1 className='font-sans text-4xl md:text-4xl font-bold text-[#ffffff] uppercase mr-8 mb-4'>
           Let’s Get Connect With me
         </h1>
@@ -151,7 +151,7 @@ const Contact = () => {
             </div>
             <button
               type="submit"
-              className="py-4 px-8 rounded-[6px] bg-[#8d4aea] hover:bg-[#8d4aea] text-[#ffffff] font-bold mt-4 uppercase"
+              className="py-4 px-8 rounded-[6px] bg-[#8d4aea] hover:bg-[#a041ff] text-[#ffffff] font-bold mt-4 uppercase"
             >
               Send Message
             </button>
