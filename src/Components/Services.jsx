@@ -66,7 +66,7 @@ const Services = () => {
             transition={{ duration: 1, delay: index * 0.2 }} 
           >
             <img src={service.image} alt={`${service.title} icon`} className="w-16 h-16 mb-4" />
-            <h2 className='mb-4 text-2xl font-black md:text-5xl'>
+            <h2 className='mb-4 text-2xl font-black md:text-4xl'>
               {service.title}
             </h2>
             <p className='font-sans text-xl lg:text-lg'>
