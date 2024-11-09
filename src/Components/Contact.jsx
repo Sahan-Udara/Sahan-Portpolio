@@ -1,4 +1,5 @@
-import React, { useState } from 'react'; 
+import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import SocialMedia from './SocialMedia';
 import Telephone from '../assets/Contact/Telephone.png';
 import Email from '../assets/Contact/Email.png';
@@ -13,8 +14,13 @@ const Contact = () => {
     subject: '',
     message: ''
   });
-  
+
   const [errors, setErrors] = useState({});
+  const [animationKey, setAnimationKey] = useState(0);
+
+  useEffect(() => {
+    setAnimationKey(prevKey => prevKey + 1);
+  }, []);
 
   // Handle input change
   const handleChange = (e) => {
@@ -48,17 +54,32 @@ const Contact = () => {
   return (
     <div className='flex flex-col bg-center bg-no-repeat bg-cover p-4 md:py-[100px] md:px-[200px] md:pb-[50px]' style={{ backgroundImage: `url(${MainBackground})` }}>
       {/* section 01 */}
-      <div className='flex flex-col justify-between py-10 cursor-default md:flex-row'>
+      <motion.div
+        key={`section1-${animationKey}`}
+        className='flex flex-col justify-between py-10 cursor-default md:flex-row'
+        initial={{ opacity: 0, x: -100 }}
+        animate={{ opacity: 1, x: 0 }}
+        exit={{ opacity: 0, x: -100 }}
+        transition={{ duration: 0.5 }}
+      >
         <h1 className='font-sans text-4xl md:text-4xl font-bold text-[#ffffff] uppercase mr-8 mb-4'>
           Let’s Get Connect With me
         </h1>
         <p className='font-sans text-xl md:text-l text-[#ffffff]'>
           Hello there! My name is Ashan Kavindu. I am a web designer & developer, and I'm very passionate about my work.
         </p>
-      </div>
+      </motion.div>
 
       <div className='flex flex-col md:flex-row'>
-        <div className='flex flex-col flex-grow w-full md:max-w-[500px] gap-8 '>
+        <motion.div
+          key={`section2-${animationKey}`}
+          className='flex flex-col flex-grow w-full md:max-w-[500px] gap-8'
+          initial={{ opacity: 0, x: -100 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: -100 }}
+          transition={{ duration: 0.5 }}
+        >
+          {/* Contact Info */}
           <div className='flex items-center w-full h-auto p-8 bg-black cursor-pointer rounded-3xl'>
             <img src={Telephone} alt="Phone Icon" className="w-[60px] h-[60px] mr-6" />
             <h1 className='font-sans md:text-[28px] text-xl font-bold text-[#ffffff] hover:text-[#a973f5] uppercase'>+94 775 655 031</h1>
@@ -78,9 +99,17 @@ const Contact = () => {
           </div>
           <h1 className='font-sans text-3xl font-bold text-[#ffffff] hover:text-[#a973f5] uppercase'>Connect Me</h1>
           <SocialMedia />
-        </div>
+        </motion.div>
 
-        <div className='flex flex-col md:flex-grow h-auto justify-center items-start w-full max-w-[1900px] md:ml-20 mt-10 md:mt-0 mb-10'>
+        {/* section 02 */}
+        <motion.div
+          key={`section3-${animationKey}`}
+          className='flex flex-col md:flex-grow h-auto justify-center items-start w-full max-w-[1900px] md:ml-20 mt-10 md:mt-0 mb-10'
+          initial={{ opacity: 0, x: 100 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: 100 }}
+          transition={{ duration: 0.5 }}
+        >
           <form className="w-full space-y-4" onSubmit={handleSubmit}>
             <div>
               <label className="block text-xl font-medium text-white">Name<span className='text-red-500'>*</span></label>
@@ -144,8 +173,9 @@ const Contact = () => {
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
-                className="mt-2 w-full h-[200px] p-4 border-2 border-[#8d4aea] rounded-2xl text-white text-l bg-[#000000] outline-none hover:ring-1 hover:ring-[#a973f5]"
-                placeholder="Your message here"
+                className="mt-2 w-full p-4 border-2 border-[#8d4aea] rounded-2xl text-white text-l bg-[#000000] outline-none hover:ring-1 hover:ring-[#a973f5]"
+                placeholder="Write your message here"
+                rows="5"
               />
               {errors.message && <p className="text-red-500">{errors.message}</p>}
             </div>
@@ -156,7 +186,7 @@ const Contact = () => {
               Send Message
             </button>
           </form>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
