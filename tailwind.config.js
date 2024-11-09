@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       screens: {
-        '2xl': '1400px', // Custom breakpoint at 1400px
+        'max-1470': {'max': '1470px'}, // Custom breakpoint at 1470px
       },
     },
   },

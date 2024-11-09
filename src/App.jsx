@@ -7,11 +7,13 @@ import Education from './Components/Education';
 import Contact from './Components/Contact';
 import Footer from './Components/Footer';
 import { Project } from './Components/Project';
+import Navbar from './Components/Navbar';
 
 function App() {
 
   return (
       <div className='w-full h-full bg-center bg-no-repeat bg-cover '>
+        <Navbar/>
         <Hero/>
         <Skills/>
         <About/>

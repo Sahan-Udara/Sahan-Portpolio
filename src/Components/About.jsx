@@ -15,7 +15,7 @@ const About = () => {
               These programs have solidified my knowledge in key web development technologies, including HTML, CSS, 
               Tailwind CSS, React, and JavaScript.</p>
             <a href={MyCv} target="_blank" rel="noopener noreferrer">
-              <button className='py-2 px-3 md:py-4 md:px-8 bg-[#8d4aea] text-[#ffffff] rounded-lg text-[10px] font-bold md:text-[18px]'>
+              <button className='py-3 px-4 md:py-4 md:px-8 bg-[#8d4aea] text-[#ffffff] rounded-lg text-[14px] font-bold md:text-[18px]'>
                 Download CV
               </button>
             </a>
