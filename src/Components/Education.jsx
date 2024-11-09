@@ -31,19 +31,19 @@ const Education = () => {
   };
 
   return (
-    <div className='grid w-full h-full gap-4 p-4 bg-center bg-no-repeat bg-cover md:px-24 md:pt-12 md:pb-24' style={{ backgroundImage: `url(${MainBackground})` }}>
+    <div className='grid w-full h-full gap-4 bg-center bg-no-repeat bg-cover p-4 md:py-[100px] md:px-[200px] md:pb-[50px]' style={{ backgroundImage: `url(${MainBackground})` }}>
       <h1 className='mb-4 font-sans text-5xl font-black text-white md:text-6xl lg:text-8xl'> My Career</h1>
-      <p className='pb-10 font-sans text-xl text-white md:text-3xl lg:text-2xl'>
+      <p className='pb-10 font-sans text-xl text-[#8d4aea] md:text-3xl lg:text-2xl'>
         Discover how our AI-Powered Design Assistant transforms your ideas into stunning designs effortlessly.
       </p>
 
-      <div className="grid md:grid-cols-[2fr_1fr] gap-4">
+      <div className="grid xl:grid-cols-[2fr_1fr] gap-4">
         <div className='p-6 text-white bg-[#2d2c2e] hover:bg-[#8d4aea] rounded-3xl'>
-          <p className="mb-6 text-sm">{cards[0].description}</p>
+          <p className="mb-6 text-sm text-white md:text-xl lg:text-xl">{cards[0].description}</p>
           <h3 className="text-xl font-bold">{cards[0].title}</h3>
         </div>
         <div className='p-6 text-white bg-[#2d2c2e] hover:bg-[#8d4aea] rounded-3xl'>
-          <p className="mb-6 text-sm">{cards[1].description}</p>
+          <p className="mb-6 text-sm text-white md:text-xl lg:text-xl">{cards[1].description}</p>
           <h3 className="text-xl font-bold">{cards[1].title}</h3>
         </div>
       </div>
@@ -51,19 +51,19 @@ const Education = () => {
       <div className="grid gap-4 md:grid-cols-2">
         {cards.slice(2).map((card, index) => (
           <div className='p-6 text-white bg-[#2d2c2e] hover:bg-[#8d4aea] rounded-3xl' key={index}>
-            <p className="mb-6 text-sm">{card.description}</p>
+            <p className="mb-6 text-sm text-white md:text-xl lg:text-xl">{card.description}</p>
             <h3 className="text-xl font-bold text-[#ffffff]">{card.title}</h3>
           </div>
         ))}
       </div>
 
-      <div className="grid md:grid-cols-[2fr_1fr] gap-4">
+      <div className="grid 2xl:grid-cols-[2fr_1fr] gap-4">
         <div className='p-6 text-white bg-[#2d2c2e] hover:bg-[#8d4aea] rounded-3xl'>
-          <p className="mb-6 text-sm">{thirdRowCard.description}</p>
+          <p className="mb-6 text-sm text-white md:text-xl lg:text-xl">{thirdRowCard.description}</p>
           <h3 className="text-xl font-bold">{thirdRowCard.title}</h3>
         </div>
         <div className='p-6 text-white bg-[#2d2c2e] hover:bg-[#8d4aea] rounded-3xl'>
-          <p className="mb-6 text-sm">W3School , TailwindCSS, React JS,three js, React native, blender</p>
+          <p className="mb-6 text-sm text-white md:text-xl lg:text-xl">W3School , TailwindCSS, React JS,three js, React native, blender</p>
           <h3 className="text-xl font-bold">Self Learning</h3>
         </div>
       </div>

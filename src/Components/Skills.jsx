@@ -44,7 +44,7 @@ const Skills = () => {
   };
 
   return (
-    <div className='flex flex-col md:flex-row p-4 pb-8 md:px-[100px] w-full h-full bg-center bg-no-repeat bg-cover' style={{ backgroundImage: `url(${MainBackground})` }}>
+    <div className='flex flex-col md:flex-row p-4  md:px-[200px] w-full h-full bg-center bg-no-repeat bg-cover' style={{ backgroundImage: `url(${MainBackground})` }}>
       <div className="flex flex-wrap justify-end flex-grow gap-4">
         <div style={containerStyle}>
           {/* Fade Effect at the Start */}

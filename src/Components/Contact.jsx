@@ -46,14 +46,14 @@ const Contact = () => {
   };
 
   return (
-    <div className='flex flex-col p-4 bg-center bg-no-repeat bg-cover md:px-24 md:pt-12 md:pb-24' style={{ backgroundImage: `url(${MainBackground})` }}>
+    <div className='flex flex-col bg-center bg-no-repeat bg-cover p-4 md:py-[100px] md:px-[200px] md:pb-[50px]' style={{ backgroundImage: `url(${MainBackground})` }}>
       {/* section 01 */}
-      <div className='flex flex-col py-10 md:flex-row justify-evenly'>
+      <div className='flex flex-col justify-between py-10 md:flex-row'>
         <h1 className='font-sans text-4xl md:text-4xl font-bold text-[#ffffff] uppercase mr-8 mb-4'>
           Let’s Get Connect With me
         </h1>
         <p className='font-sans text-xl md:text-l text-[#ffffff]'>
-          Hello there! My name is Ashan Kavindu. I am a web designer & developer, and I'm very passionate about my work.
+          Hello there! My name is Ashan Kavindu. I am a web designer & developer, and I'm very passionate about my work.and I'm very passionate about my work.and I'm very passionate about my work.
         </p>
       </div>
 
@@ -73,7 +73,7 @@ const Contact = () => {
             <img src={Location} alt="Location Icon" className="w-[60px] h-[60px] mr-6" />
             <h1 className='font-sans md:text-[28px] text-xl font-bold text-[#ffffff] hover:text-[#a973f5] '>No 300, Citrus Juction, Narawala, Poddala</h1>
           </div>
-          <h1 className='font-sans text-3xl font-bold text-[#8d4aea]  uppercase'>Connect Me</h1>
+          <h1 className='font-sans text-3xl font-bold text-[#ffffff]  uppercase'>Connect Me</h1>
           <SocialMedia />
         </div>
 
@@ -148,7 +148,7 @@ const Contact = () => {
             </div>
             <button
               type="submit"
-              className="py-4 px-8 rounded-[6px] bg-[#8d4aea] hover:bg-[#8d4aea] text-[#ffffff] mt-4 uppercase"
+              className="py-4 px-8 rounded-[6px] bg-[#8d4aea] hover:bg-[#8d4aea] text-[#ffffff] font-bold mt-4 uppercase"
             >
               Send Message
             </button>

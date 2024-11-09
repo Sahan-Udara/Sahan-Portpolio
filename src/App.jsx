@@ -4,8 +4,9 @@ import Skills from './Components/Skills';
 import About from './Components/About';
 import Services from './Components/Services';
 import Education from './Components/Education';
-import { Ipad } from './Components/ipad';
 import Contact from './Components/Contact';
+import Footer from './Components/Footer';
+import { Project } from './Components/Project';
 
 function App() {
 
@@ -13,14 +14,12 @@ function App() {
       <div className='w-full h-full bg-center bg-no-repeat bg-cover '>
         <Hero/>
         <Skills/>
-        {/* <About/> */}
+        <About/>
         <Services/>
         <Education/>
-        <Ipad/>
+        <Project/>
         <Contact/>
-
-        
-
+        <Footer/>
       </div>
   )
 }
