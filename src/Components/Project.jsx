@@ -113,7 +113,6 @@ export function Project() {
           </div>
         </h1>
         
-        {/* Project Area */}
         <div className="grid items-center justify-center grid-cols-2 gap-4 md:grid-cols-5 md:px-[200px]">
           {projectData[selectedCategory].slice(startIndex, startIndex + (window.innerWidth < 768 ? 2 : 5)).map((project, index) => (
             <div key={index}>
