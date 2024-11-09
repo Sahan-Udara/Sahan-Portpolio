@@ -7,7 +7,7 @@ import JS from '../assets/Skills/JS 1.png';
 import PS from '../assets/Skills/PS 1.png';
 import ReactIcon from '../assets/Skills/React 1.png';
 import Tailwind from '../assets/Skills/Tailwind 1.png';
-import MainBackground from '../assets/Back/MainBackground.jpg';
+import MainBackground from '../assets/Back/BackExpand.jpg';
 
 
 const Skills = () => {
@@ -31,7 +31,7 @@ const Skills = () => {
 
   const imageStyle = {
     width: 'auto',
-    height: isMobile ? '40px' : '60px', // Smaller size for mobile screens
+    height: isMobile ? '40px' : '60px', 
     marginRight: '20px',
   };
 
@@ -47,11 +47,8 @@ const Skills = () => {
     <div className='flex flex-col md:flex-row p-4  md:px-[200px] w-full h-full bg-center bg-no-repeat bg-cover' style={{ backgroundImage: `url(${MainBackground})` }}>
       <div className="flex flex-wrap justify-end flex-grow gap-4">
         <div style={containerStyle}>
-          {/* Fade Effect at the Start */}
           <div style={{ ...fadeStyle, left: 0, background: 'linear-gradient(to right, #151515, transparent)' }} />
-          {/* Fade Effect at the End */}
           <div style={{ ...fadeStyle, right: 0, background: 'linear-gradient(to left, #151515, transparent)' }} />
-          
           <div style={marqueeStyle}>
             {[CSharp, CSS, HTML1, Java, JS, PS, ReactIcon, Tailwind].map((img, index) => (
               <img key={index} src={img} style={imageStyle} className="skill-image" alt={`Skill ${index}`} />
@@ -66,7 +63,6 @@ const Skills = () => {
   );
 };
 
-// CSS keyframes for marquee animation
 const keyframes = `
   @keyframes marquee {
     0% {

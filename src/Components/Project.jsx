@@ -131,7 +131,7 @@ export function Project() {
           </div>
         </h1>
         <motion.div
-          key={selectedCategory} // Forces re-render on category change
+          key={selectedCategory}
           className="grid items-center justify-center grid-cols-2 gap-4 md:grid-cols-5 md:px-[200px]"
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}

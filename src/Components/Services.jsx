@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import Background from '../assets/Background/SubBack.jpg';
+import Background from '../assets/Back/SubBack.jpg';
 import MainBackground from '../assets/Back/BackExpand.jpg';
 import Graphic from '../assets/Services/Graphic.png';
 import UIUX from '../assets/Services/UIUX.png';
 import Web from '../assets/Services/Web.png';
 
 const Services = () => {
-  const serviceDescription = 'Discover how our AI-Powered Design Assistant transforms your ideas into stunning designs effortlessly.';
+  const serviceDescription = 'Providing expert graphic design, mobile app development, UI/UX design, and web development solutions.';
 
   const servicesData = [
     { title: 'Graphic Designing', image: Graphic },

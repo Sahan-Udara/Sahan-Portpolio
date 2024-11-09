@@ -22,12 +22,10 @@ const Contact = () => {
     setAnimationKey(prevKey => prevKey + 1);
   }, []);
 
-  // Handle input change
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // Form validation
   const validateForm = () => {
     const newErrors = {};
     if (!formData.name) newErrors.name = 'Name is required';
@@ -39,7 +37,6 @@ const Contact = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     if (!validateForm()) return;
@@ -53,7 +50,6 @@ const Contact = () => {
 
   return (
     <div className='flex flex-col bg-center bg-no-repeat bg-cover p-4 md:py-[100px] md:px-[200px] md:pb-[50px]' style={{ backgroundImage: `url(${MainBackground})` }}>
-      {/* section 01 */}
       <motion.div
         key={`section1-${animationKey}`}
         className='flex flex-col justify-between py-10 cursor-default md:flex-row'
@@ -62,11 +58,13 @@ const Contact = () => {
         exit={{ opacity: 0, x: -100 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className='font-sans text-4xl md:text-4xl font-bold text-[#ffffff] uppercase mr-8 mb-4'>
+        <h1 className='font-sans text-5xl font-black md:text-5xl lg:text-7xl text-[#ffffff] uppercase mr-8 mb-4'>
           Let’s Get Connect With me
         </h1>
-        <p className='font-sans text-xl md:text-l text-[#ffffff]'>
-          Hello there! My name is Ashan Kavindu. I am a web designer & developer, and I'm very passionate about my work.
+        <p className='font-sans text-xl text-[#d8c3f7]  md:text-3xl lg:text-2xl'>
+        Let’s bring your ideas to life! I specialize in Graphic Design, UI/UX Design, and Web Development.
+         If you’re looking to create something unique, I’d love to connect and help make it happen. Reach out, 
+         and let’s build something amazing together!
         </p>
       </motion.div>
 
@@ -79,7 +77,7 @@ const Contact = () => {
           exit={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.5 }}
         >
-          {/* Contact Info */}
+
           <div className='flex items-center w-full h-auto p-8 bg-black cursor-pointer rounded-3xl'>
             <img src={Telephone} alt="Phone Icon" className="w-[60px] h-[60px] mr-6" />
             <h1 className='font-sans md:text-[28px] text-xl font-bold text-[#ffffff] hover:text-[#a973f5] uppercase'>+94 775 655 031</h1>
@@ -101,7 +99,6 @@ const Contact = () => {
           <SocialMedia />
         </motion.div>
 
-        {/* section 02 */}
         <motion.div
           key={`section3-${animationKey}`}
           className='flex flex-col md:flex-grow h-auto justify-center items-start w-full max-w-[1900px] md:ml-20 mt-10 md:mt-0 mb-10'
@@ -144,7 +141,7 @@ const Contact = () => {
                   name="phone"
                   value={formData.phone}
                   onChange={(e) => {
-                    // Only allow numeric input
+
                     const numericValue = e.target.value.replace(/\D/, '');
                     setFormData({ ...formData, phone: numericValue });
                   }}
