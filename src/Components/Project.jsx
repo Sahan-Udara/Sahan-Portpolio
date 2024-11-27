@@ -5,51 +5,51 @@ import MainBackground from '../assets/Back/BackExpand.jpg';
 import IpadIMG from '../assets/Project/Sample.jpg';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
-import WebDevImg1 from '../assets/Project/Web/Cinama.jpg';
-import WebDevImg2 from '../assets/Project/Web/Gamer.jpg';
-import WebDevImg3 from '../assets/Project/Web/Photographer.jpg';
-import WebDevImg4 from '../assets/Project/Web/RealState.jpg';
-import WebDevImg5 from '../assets/Project/Web/Photographer2.jpg';
-import UiUxImg1 from '../assets/Project/UiUx/Fashion.jpg';
-import UiUxImg2 from '../assets/Project/UiUx/FashionApp.jpg';
-import UiUxImg3 from '../assets/Project/UiUx/MobileStore.jpg';
-import UiUxImg4 from '../assets/Project/UiUx/Music.jpg';
-import UiUxImg5 from '../assets/Project/UiUx/Photographer2.jpg';
-import GraphicImg1 from '../assets/Project/Graphic/Touch1.jpg';
-import GraphicImg2 from '../assets/Project/Graphic/Touch2.jpg';
-import GraphicImg3 from '../assets/Project/Graphic/Touch3.jpg';
-import GraphicImg4 from '../assets/Project/Graphic/Touch4.jpg';
-import GraphicImg5 from '../assets/Project/Graphic/Touch5.jpg';
+import WebDevImg1 from '../assets/Project/Web/web1.png';
+import WebDevImg2 from '../assets/Project/Web/web2.jpg';
+import WebDevImg3 from '../assets/Project/Web/web3.png';
+import WebDevImg4 from '../assets/Project/Web/web4.png';
+import WebDevImg5 from '../assets/Project/Web/web5.png';
+import UiUxImg1 from '../assets/Project/UiUx/ui1.png';
+import UiUxImg2 from '../assets/Project/UiUx/ui2.png';
+import UiUxImg3 from '../assets/Project/UiUx/ui3.jpg';
+import UiUxImg4 from '../assets/Project/UiUx/ui4.png';
+import UiUxImg5 from '../assets/Project/UiUx/ui5.png';
+import GraphicImg1 from '../assets/Project/Graphic/graphic1.jpg';
+import GraphicImg2 from '../assets/Project/Graphic/graphic2.jpg';
+import GraphicImg3 from '../assets/Project/Graphic/graphic3.jpg';
+import GraphicImg4 from '../assets/Project/Graphic/graphic4.jpg';
+import GraphicImg5 from '../assets/Project/Graphic/graphic5.jpg';
 
 export function Project() {
   const [selectedCategory, setSelectedCategory] = useState("Web Development");
   const [selectedProject, setSelectedProject] = useState({
     image: IpadIMG,
-    url: "https://dribbble.com/shanuk05"
+    url: "https://dribbble.com/"
   });
   const [startIndex, setStartIndex] = useState(0);
 
   const projectData = {
     "Web Development": [
-      { image: WebDevImg1, url: "https://dribbble.com/shots/23870600-Movie-Web-Site-UI-Design" },
-      { image: WebDevImg2, url: "https://dribbble.com/shanuk05/project2" },
-      { image: WebDevImg3, url: "https://dribbble.com/shanuk05/project3" },
-      { image: WebDevImg4, url: "https://dribbble.com/shanuk05/project4" },
-      { image: WebDevImg5, url: "https://dribbble.com/shanuk05/project5" }
+      { image: WebDevImg1, url: "https://dribbble.com/" },
+      { image: WebDevImg2, url: "https://dribbble.com/" },
+      { image: WebDevImg3, url: "https://dribbble.com/" },
+      { image: WebDevImg4, url: "https://dribbble.com/" },
+      { image: WebDevImg5, url: "https://dribbble.com/" }
     ],
     "UI/UX Design": [
-      { image: UiUxImg1, url: "https://dribbble.com/shanuk05/project6" },
-      { image: UiUxImg2, url: "https://dribbble.com/shanuk05/project7" },
-      { image: UiUxImg3, url: "https://dribbble.com/shanuk05/project8" },
-      { image: UiUxImg4, url: "https://dribbble.com/shanuk05/project9" },
-      { image: UiUxImg5, url: "https://dribbble.com/shanuk05/project10" }
+      { image: UiUxImg1, url: "https://dribbble.com/" },
+      { image: UiUxImg2, url: "https://dribbble.com/" },
+      { image: UiUxImg3, url: "https://dribbble.com/" },
+      { image: UiUxImg4, url: "https://dribbble.com/" },
+      { image: UiUxImg5, url: "https://dribbble.com/" }
     ],
     "Graphic Design": [
-      { image: GraphicImg1, url: "https://dribbble.com/shanuk05/project11" },
-      { image: GraphicImg2, url: "https://dribbble.com/shanuk05/project12" },
-      { image: GraphicImg3, url: "https://dribbble.com/shanuk05/project13" },
-      { image: GraphicImg4, url: "https://dribbble.com/shanuk05/project14" },
-      { image: GraphicImg5, url: "https://dribbble.com/shanuk05/project15" }
+      { image: GraphicImg1, url: "https://dribbble.com/" },
+      { image: GraphicImg2, url: "https://dribbble.com/" },
+      { image: GraphicImg3, url: "https://dribbble.com/" },
+      { image: GraphicImg4, url: "https://dribbble.com/" },
+      { image: GraphicImg5, url: "https://dribbble.com/" }
     ]
   };
 

@@ -57,7 +57,7 @@ const Services = () => {
         {servicesData.map((service, index) => (
           <motion.div
             key={index}
-            className='p-8 text-white bg-center bg-no-repeat bg-cover rounded-3xl  hover:border-4 hover:border-[#8d4aea]'
+            className='p-8 text-white bg-center bg-no-repeat bg-cover rounded-3xl border-4 border-[#ffffff] hover:border-4 hover:border-[#8d4aea]'
             style={{ backgroundImage: `url(${Background})` }}
             variants={sectionTwoVariants}
             initial="hidden"

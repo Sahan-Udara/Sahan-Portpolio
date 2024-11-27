@@ -5,32 +5,32 @@ import MainBackground from '../assets/Back/BackExpand.jpg';
 const Education = () => {
   const cards = [
     {
-      title: "HND in Computing ( Software Enginnering ) 2024",
-      description: "Completed an HND in Computing (Software Engineering) at IDM Nation Campus from 2022 to 2024, focusing on Programming, Networking, Professional Practice, Database Design and Development, Security, Managing a Successful Computing Project, Computer Research Project, Business Intelligence, Computer Systems and Architecture, Web Designing and Development, Data Structure and Algorithms, Advanced Programing, Data Mining, Application Development, Systems Analysis and Design.",
+      title: "Undergraduate Degree in Computing (Software Engineering) at SLIIT",
+      description: "I am currently pursuing an undergraduate degree in Computing (Software Engineering) at SLIIT Campus since 2022. My studies focus on a diverse range of subjects, including Programming, Networking, Professional Practice, Database Design and Development, Security, Managing Successful Computing Projects, Computer Research Projects, Business Intelligence, Computer Systems and Architecture, Web Design and Development, Data Structures and Algorithms, Advanced Programming, Data Mining, Application Development, and Systems Analysis and Design.",
       bgColor: "bg-purple-900",
     },
     {
-      title: "(DITEC) Diploma in IT 2020 ",
-      description: "Completed a DITEC (Diploma in IT) at ESOFT Metro Campus in 2020, covering information technology, MS Office, computer hardware, networking, internet and email, web design, graphics and multimedia, software engineering, Python programming, database concepts, and C# programming",
+      title: "Diploma in Software Engineering ",
+      description: "Completing a Diploma in Software Engineering at IJSE Campus, covering information technology, networking, internet and email, web design, graphics and multimedia, software engineering ,java programming, python programming, database concepts, and C# programming",
       bgColor: "bg-purple-800",
     },
     {
-      title: "G.C.E. Advanced Level (2020)",
-      description: "G.C.E. Advanced Level in 2020 in the Arts stream at Vidayaloka College, Galle.",
+      title: "G.C.E. Advanced Level (2018)",
+      description: "G.C.E. Advanced Level in 2018 in the Commers stream at Vidayaloka College, Galle.",
       bgColor: "bg-gray-800",
     },
     {
-      title: "G.C.E. Ordinary Level (2017)",
-      description: "G.C.E. Ordinary Level in 2017 in Sinhala medium at Vidayaloka College, Galle.",
+      title: "G.C.E. Ordinary Level (2015)",
+      description: "G.C.E. Ordinary Level in 2015 in Sinhala medium at Vidayaloka College, Galle.",
       bgColor: "bg-gray-800",
     },
 
   ];
 
   const thirdRowCard = {
-    title: "IDM E-Kids (Explore Kids) L05 2014",
-    description: "Completed the IDM E-Kids (Explore Kids) L05 at IDM Nation Campus in 2014, gaining foundational IT knowledge, including MS Packages and English skills.",
-     };
+    title: "Certifications – NVQ Level 4 (Youn Saviya National Project, 2018)",
+    description: "Completed NVQ Level 4 certifications in Special Practical English, Human Resource Management, Marketing Management, and Information Technology through the Youn Saviya National Project in 2018.",
+  };
 
   const [animationKey, setAnimationKey] = useState(0);
 

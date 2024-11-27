@@ -33,15 +33,17 @@ const About = () => {
               transition={{ duration: 1 }}
             >
               <h1 className='px-8 mb-4 font-sans text-5xl font-black text-white md:text-6xl lg:text-8xl'>
-                Who is <span className='text-[#8d4aea] hover:text-[#a041ff]'>Ashan ?</span>
+                Who is <span className='text-[#8d4aea] hover:text-[#a041ff]'>Sahan ?</span>
               </h1>
               <p className='my-8 text-sm leading-loose text-white md:text-2xl lg:text-2xl'>
-              I am a passionate Software Engineer, currently interning at Legion Code IT Solutions 
-              as a Front-End Developer and UI/UX Designer. My academic journey has been both challenging 
-              and rewarding. I recently completed my HND in Computing (Software Engineering) from IDM 
-              Nations Campus, along with a Diploma in Information Technology from ESOFT Metro Campus. These 
-              experiences have equipped me with a solid foundation in web development, particularly with technologies
-               like HTML, CSS, Tailwind CSS, React, Next.js, and JavaScript.
+                I am a passionate Software Engineer currently pursuing my undergraduat
+                degree in Computing (Software Engineering) at SLIIT. I also hold a Diploma
+                in Software Engineering from IJSE Campus, which has provided me with a 
+                solid foundation in software development.
+                I specialize in front-end development and UI/UX design, with hands-on experience using 
+                technologies such as HTML, CSS, Tailwind CSS, JavaScript, React, and Next.js. 
+                I am eager to apply my skills to create intuitive and visually appealing digital
+               solutions while continuously learning and growing in the field.
               </p>
               <a href={MyCv} target="_blank" rel="noopener noreferrer">
                 <button className='py-3 px-4 md:py-4 md:px-8 bg-[#8d4aea] hover:bg-[#a041ff] text-[#ffffff] rounded-lg text-[14px] font-bold md:text-[18px]'>

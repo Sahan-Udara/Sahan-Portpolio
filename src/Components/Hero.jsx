@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import Background from '../assets/Back/SubBack.jpg';
 import MainBackground from '../assets/Back/BackExpand.jpg';
-import Ashan from '../assets/Hero/Ashan.png';
+import Sahan from '../assets/Hero/Sahan.png';
 
 const Hero = () => {
   const [key, setKey] = useState(0);
@@ -62,7 +62,7 @@ const Hero = () => {
         >
           <h1 className="text-2xl md:text-4xl font-bold text-[#ffffff]">Hello,</h1>
           <h1 className="text-5xl md:text-5xl lg:text-9xl max-[1400px]:text-5xl text-[#8d4aea] hover:text-[#a041ff] font-black font-sans uppercase md:text-left pr-4">
-            Ashan Kavindu
+            Sahan Udara
           </h1>
           <div style={{ minHeight: '60px' }}>
             <h2 className="text-l md:text-3xl lg:text-4xl text-[#ffffff] font-black font-sans my-4 md:my-8 md:text-left">
@@ -92,7 +92,7 @@ const Hero = () => {
           transition={{ duration: 1 }}
         >
           <img
-            src={Ashan}
+            src={Sahan}
             className="absolute bottom-0 right-0 w-auto md:w-[600px] pt-4 object-contain rounded-br-[20px]"
           />
         </motion.div>

@@ -41,7 +41,7 @@ const Contact = () => {
     e.preventDefault();
     if (!validateForm()) return;
 
-    const mailtoLink = `mailto:ashankaviuh@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
+    const mailtoLink = `mailto:sahan4104@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
       `Name: ${formData.name}\nPhone: ${formData.phone}\nMessage: ${formData.message}`
     )}`;
     
@@ -80,12 +80,12 @@ const Contact = () => {
 
           <div className='flex items-center w-full h-auto p-8 bg-black cursor-pointer rounded-3xl'>
             <img src={Telephone} alt="Phone Icon" className="w-[60px] h-[60px] mr-6" />
-            <h1 className='font-sans md:text-[28px] text-xl font-bold text-[#ffffff] hover:text-[#a973f5] uppercase'>+94 775 655 031</h1>
+            <h1 className='font-sans md:text-[19px] lg:text-[23px] text-xl font-bold text-[#ffffff] hover:text-[#a973f5] uppercase'>+94 777 471 335</h1>
           </div>
 
           <div className='flex items-center w-full h-auto p-8 bg-black cursor-pointer rounded-3xl'>
             <img src={Email} alt="Email Icon" className="w-[60px] h-[60px] mr-6" />
-            <h1 className='font-sans md:text-[28px] text-xl font-bold text-[#ffffff] hover:text-[#a973f5] '>ashankaviuh@gmail.com</h1>
+            <h1 className='font-sans md:text-[19px] lg:text-[23px] text-xl font-bold text-[#ffffff] hover:text-[#a973f5] '>sahan4104@gmail.com</h1>
           </div>
 
           <div
@@ -93,7 +93,7 @@ const Contact = () => {
             onClick={() => window.open('https://maps.app.goo.gl/yQ1H6GpZ9u3vPZop6', '_blank')}
           >
             <img src={Location} alt="Location Icon" className="w-[60px] h-[60px] mr-6" />
-            <h1 className='font-sans md:text-[28px] text-xl font-bold text-[#ffffff] hover:text-[#a973f5] '>No 300, Citrus Junction, Narawala, Poddala</h1>
+            <h1 className='font-sans md:text-[19px] lg:text-[23px] text-xl font-bold text-[#ffffff] hover:text-[#a973f5] '>No 300, Citrus Junction, Narawala, Poddala</h1>
           </div>
           <h1 className='font-sans text-3xl font-bold text-[#ffffff] hover:text-[#a973f5] uppercase'>Connect Me</h1>
           <SocialMedia />
