@@ -1,14 +1,17 @@
 {
+  "homepage": "https://Sahan-Udara.github.io/Sahan-Portpolio",
   "name": "sahan-portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
+ "scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "lint": "eslint .",
+  "preview": "vite preview",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+},
   "dependencies": {
     "clsx": "^2.1.1",
     "framer-motion": "^11.11.11",
